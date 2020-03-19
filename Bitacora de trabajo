@@ -1,0 +1,11 @@
+-----Diciembre 12 del 2019------
+Colores de la nueva pagina
+#110C0F Smoky black
+#EFB22D Saffron
+#696969 Dim Gray
+#FBF5F3 White Smoke
+#E2DADB Gainsboro
+
+Se adelanta sobre el landing o home de lanueva página y se definen los 
+colores base, a partir de allí las posibles escalas tonales de los 
+mismos para los elementos hijos de los contenedores.
