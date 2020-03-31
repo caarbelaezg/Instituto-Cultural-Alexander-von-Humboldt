@@ -3028,7 +3028,7 @@ body {
     height: 4.25em;
     left: 0;
     line-height: 4.25em;
-    position: fixed;
+    position: absolute;
     text-align: right;
     top: 0;
     width: 100%;
@@ -4633,7 +4633,13 @@ body.is-ie .post {
 }
 
 
-/*Overlay de imagenes*/
+/*Overlay de imagenes sección cultural*/
+
+.cult-img-cont {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
 
 .overlay {
     position: absolute;
@@ -4679,14 +4685,14 @@ body.is-ie .post {
     overflow: hidden;
     /* without this the contents will be 
                                           * visible regardless of height */
-    transition: height 0.5s ease-in;
+    transition: height 1s ease-in;
     /* transition has to be defined on base state of element */
     background-color: #ffffff;
     /* make transition easier to observe */
 }
 
 input[type=checkbox]:checked~.category-description {
-    height: 4100px;
+    height: fit-content;
     /* change height when input is checked */
 }
 
@@ -4695,7 +4701,7 @@ input[type=checkbox]:checked~.category-description {
         display: none;
     }
     input[type=checkbox]:checked~.category-description {
-        height: 1400px;
+        height: fit-content;
         /* change height when input is checked */
     }
 }
