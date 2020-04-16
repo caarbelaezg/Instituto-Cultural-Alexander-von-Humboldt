@@ -4815,7 +4815,7 @@ Para el infográfico en versión desktop
         width: 100%;
         max-width: 90rem;
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0;
     }
     .accordion-item {
         background-color: rgb(240, 186, 70);
