@@ -4580,6 +4580,27 @@ body.is-ie .post {
 
 /*------Estilos agregados por Carlos Alberto Arbeláez Giraldo-----*/
 
+#footer .sponsors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.sponsors .img-spon-cont {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 250px;
+}
+
+.sponsors .img-spon-cont img {
+    width: 100%;
+    object-fit: contain;
+}
+
 
 /*Slide animation */
 
@@ -4838,7 +4859,6 @@ Para el infográfico en versión desktop
         display: none;
     }
     .answer {
-        max-height: 0;
         overflow: hidden;
         position: relative;
         background-color: rgb(240, 186, 70);
@@ -4857,8 +4877,12 @@ Para el infográfico en versión desktop
     .answer p {
         padding: 1rem;
     }
-    .accordion-item:target .answer {
+    .open .answer {
         max-height: 20rem;
+    }
+    .close .answer {
+        height: 0;
+        transition: height 1.5s ease-out;
     }
     .accordion-item:target .accordion-link .ion-md-add {
         display: none;
