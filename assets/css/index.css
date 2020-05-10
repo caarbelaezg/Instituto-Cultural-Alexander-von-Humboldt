@@ -31,14 +31,95 @@
     z-index: 3;
 }
 
-.intro h1 {
-    font-size: 4rem;
-    margin-bottom: 0.75rem;
+.intro .intro-header .banner-img-cont {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .intro-header .banner-img-cont img {
+    height: 100%;
+}
+
+.intro .intro-header p {
+    margin: 0.5rem;
 }
 
 .intro p {
     font-size: 1.75rem;
 }
+
+.image-fit-cont {
+    margin: 0;
+}
+
+.btn-cont .ind-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+/*----estilos modal-----*/
+
+.modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.modal-close {
+    opacity: 0;
+}
+
+.modal-open {
+    opacity: 1;
+    transition: opacity ease-in-out 1s;
+}
+
+.modal-container {
+    position: relative;
+    border-radius: 5%;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+}
+
+.modal-container .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.modal-container .modal-header .modal-close-btn:hover {
+    background-color: #EFB22D;
+    border-radius: 50%;
+}
+
+.modal-container .header-title {
+    margin: 0;
+}
+
+.modal-container .modal-ig-cont {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 326px;
+    max-height: 455px;
+    overflow: scroll;
+}
+
+
+/*-----------------------*/
 
 @media (max-width: 700px) {
     html {
@@ -53,15 +134,4 @@
     .intro p {
         display: none;
     }
-}
-
-.image-fit-cont {
-    margin: 0;
-}
-
-.btn-cont .ind-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
 }
