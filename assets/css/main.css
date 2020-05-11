@@ -4822,6 +4822,37 @@ Para el infográfico en versión desktop
 }
 
 
+/*sección de examenes*/
+
+.fechas {
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+}
+
+.fechas .table-container {
+    width: 50%;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.fechas .fechas-img-cont {
+    width: 50%;
+    height: 500px;
+    padding: 0.2rem;
+}
+
+.fechas .fechas-img-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /*Media query para el ajuste a movil*/
 
 @media screen and (max-width: 736px) {
@@ -4889,5 +4920,13 @@ Para el infográfico en versión desktop
     }
     .accordion-item:target .accordion-link .ion-md-remove {
         display: block;
+    }
+    .fechas .fechas-img-cont {
+        display: none;
+    }
+    .fechas .table-container {
+        width: 100%;
+        padding: 0.2rem;
+        display: flex;
     }
 }
