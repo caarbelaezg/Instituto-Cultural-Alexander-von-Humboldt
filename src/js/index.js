@@ -1,5 +1,6 @@
 window.onload = () => {
     window.setTimeout(modalfunc, 2000)
+
 }
 const modal = document.getElementById('modal')
 const modalfunc = () => {
@@ -17,10 +18,11 @@ const modalfunc = () => {
 const closeModal = () => {
     modal.setAttribute("style", "display:none")
 }
-
 const wpp = document.getElementById('wpp')
 wpp.setAttribute('href', 'https://api.whatsapp.com/send?phone=573008763792&text=Cuéntanos que información quieres saber sobre el AVH')
 
+
+//Slide principal
 const slideshowImages = document.querySelectorAll(".intro-slideshow img");
 
 const nextImageDelay = 8000;

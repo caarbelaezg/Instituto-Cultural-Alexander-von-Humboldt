@@ -35,8 +35,9 @@
     <nav id="menu">
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Cursos.html">Cursos</a></li>
+            <li><a href="CursosIntensivos.html">Cursos</a></li>
             <li><a href="Cultural.html">Cultural</a></li>
+            <li><a href="Examenes.html">Examenes</a></li>
             <li><a href="Instituto.html">Instituto</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
         </ul>
@@ -51,16 +52,16 @@
                 </div>
             </div>
             <header>
-                <h1>Cursos Regulares</h1>
+                <h1>Cursos Intensivos</h1>
                 <p class="info"> Publicado por: <a href="#"> Coordinación AvH</a></p>
             </header>
 
-            <h2>Semestre 2020 - 1</h2>
-            <p><strong>Fechas de inscripciones:</strong> 15 a 30 de enero 2020. <br>
-                <strong>Inicio de los cursos:</strong>4 de febrero 2020. <br> <a href="https://forms.gle/kp3tWEkz5bp9nqvJ6">Formulario de inscripción</a>
+            <h2>Periodo Junio - Julio 2020</h2>
+            <p><strong>Fechas de inscripciones:</strong> 15 de mayo a 10 de junio. <br>
+                <strong>Inicio de los cursos:</strong> 17 de junio hasta 23 de julio <br>
+                <a href="https://forms.gle/kp3tWEkz5bp9nqvJ6">Formulario de inscripción</a>
             </p>
-            <p><u>Los cursos regulares se dictan semestralmente</u>, de febrero a junio y de agosto a noviembre. Los cursos cuentan con una intensidad de 80 horas académicas. El instituto los lleva a cabo con base al Marco Común Europeo de las Lenguas -
-                MCER y se dividen así:</p>
+            <p>Los cursos se dictarán de manera presencial <u>(si el gobierno se permita, sino clases virtuales por videoconferencia con apoyo en plataforma de aprendizaje)</u></p>
 
 
             <section>
@@ -71,41 +72,35 @@
                             <div class="dropdown">
                                 <button class="dropbtn A1">A1</button>
                                 <div class="dropdown-content">
-                                    <a onclick="nHorario('A1-1')" class="A1-1">A1.1</a>
-                                    <a onclick="nHorario('A1-2')" class="A1-2">A1.2</a>
-                                    <a onclick="nHorario('A1-C')" class="A1-C">A1 - Completo</a>
+                                    <a onclick="nHorarioI('A1-1')" class="A1-1">A1.1</a>
+                                    <a onclick="nHorarioI('A1-2')" class="A1-2">A1.2</a>
+                                    <a onclick="nHorarioI('A1-C')" class="A1-C">A1 - Intensivo</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn A2">A2</button>
                                 <div class="dropdown-content">
-                                    <a onclick="nHorario('A2-1')" class="A2-1">A2.1</a>
-                                    <a onclick="nHorario('A2-2')" class="A2-2">A2.2</a>
-                                    <a onclick="nHorario('A2-C')" class="A2-C">A2 - Completo</a>
+                                    <a onclick="nHorarioI('A2-1')" class="A2-1">A2.1</a>
+                                    <a onclick="nHorarioI('A2-2')" class="A2-2">A2.2</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn">B1</button>
                                 <div class="dropdown-content">
-                                    <a onclick="nHorario('B1-1')" class="B1-1">B1.1</a>
-                                    <a onclick="nHorario('B1-2')" class="B1-2">B1.2</a>
-                                    <a onclick="nHorario('B1-P')" class="B1-P">B1 +</a>
+                                    <a onclick="nHorarioI('B1-1')" class="B1-1">B1.1</a>
+                                    <a onclick="nHorarioI('B1-2')" class="B1-2">B1.2</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn">B2</button>
                                 <div class="dropdown-content">
-                                    <a onclick="nHorario('B2-1')" class="B2-1">B2.1</a>
-                                    <a onclick="nHorario('B2-2')" class="B2-2">B2.2</a>
-                                    <a onclick="nHorario('B2-3')" class="B2-3">B2.3</a>
+                                    <a onclick="nHorarioI('B2')" class="B2">B2</a>
                                 </div>
                             </div>
                             <div class="dropdown">
                                 <button class="dropbtn">C1</button>
                                 <div class="dropdown-content">
-                                    <a onclick="nHorario('C1-1')" class="C1-1">C1.1</a>
-                                    <a onclick="nHorario('C1-2')" class="C1-2">C1.2</a>
-                                    <a onclick="nHorario('C1-3')" class="C1-3">C1.3</a>
+                                    <a onclick="nHorarioI('C1')" class="C1">C1</a>
                                 </div>
                             </div>
 
@@ -114,19 +109,13 @@
                             <div class="info-curso-container">
                                 <h1 class="actual-disp">A1.1</h1>
                                 <div class="info-curso">
-                                    <p class="day-1">Lunes y miércoles</p>
-                                    <p class="day-2">Martes y jueves</p>
-                                    <p class="day-3">Sábados</p>
+                                    <p class="day-1">Lunes a viernes</p>
                                 </div>
                                 <div class="info-curso">
-                                    <p class="hor-1">6:15pm - 8:15pm</p>
-                                    <p class="hor-2">6:30pm - 8:30pm</p>
-                                    <p class="hor-3">8:00am - 12:30pm</p>
+                                    <p class="hor-1">6:00pm - 8:30pm</p>
                                 </div>
                                 <div class="info-curso">
-                                    <p class="sed-1">Aguacatala</p>
-                                    <p class="sed-2">Calazans</p>
-                                    <p class="sed-3">Calazans</p>
+                                    <p class="sed-1">Calazans</p>
                                 </div>
                             </div>
                         </article>
@@ -141,8 +130,7 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Aguacatala:</strong><br><i>Lun - Mier</i> de 6:15pm - 8:15pm <br>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 8:00am - 12m
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
@@ -153,19 +141,18 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Aguacatala:</strong><br><i>Lun - Mier</i> de 6:15pm - 8:15pm <br>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 8:00am - 12m
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
                             <div class="accordion-item close">
-                                <a class="accordion-link">Nivel A1 completo
+                                <a class="accordion-link">A1 super intensivo
                                     <ion-icon class="icon ion-md-add" name="add-sharp"></ion-icon>
                                     <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>                            
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Calazans:</strong><br><i>Lun - Mie - Vie</i> de 6:30pm - 8:30pm<br><br><i>Sab</i> de 8:00am - 5:30pm
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 8.00am a 1.00pm
                                     </p>
                                 </div>
                             </div>
@@ -176,8 +163,7 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Aguacatala:</strong><br><i>Lun - Mier</i> de 6:15pm - 8:15pm <br>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 8:00am - 12m
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
@@ -188,18 +174,7 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Calazans:</strong><br><i>Lun - Mie</i> de 6:30pm - 8:30pm<br><br><i>Sab</i> de 8:00am - 5:30pm
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion-item close">
-                                <a class="accordion-link">Nivel A2 completo
-                                    <ion-icon class="icon ion-md-add" name="add-sharp"></ion-icon>
-                                    <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>   
-                                </a>
-                                <div class="answer">
-                                    <p>
-                                        <strong>Calazans:</strong><br><i>Lun - Mie - Vie</i> de 6:30pm - 8:30pm<br><br><i>Mar - Jue - Vie</i> de 8:30am - 11:00am
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
@@ -210,8 +185,7 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Aguacatala:</strong><br><i>Lun - Mier</i> de 6:15pm - 8:15pm <br>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 8:00am - 12m
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
@@ -222,40 +196,18 @@
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 1:00pm - 5:30pm
+                                        <strong>Calazans:</strong><br><i>Lun - Vie</i> de 6:00pm - 8:30pm
                                     </p>
                                 </div>
                             </div>
                             <div class="accordion-item close">
-                                <a class="accordion-link">Nivel B1 +
+                                <a class="accordion-link">Nivel B2
                                     <ion-icon class="icon ion-md-add" name="add-sharp"></ion-icon>
                                     <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>   
                                 </a>
                                 <div class="answer">
                                     <p>
-                                        <strong>Calazans:</strong><br><i>Lun - Mier</i> de 6:30pm - 8:30pm
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion-item close">
-                                <a class="accordion-link">Nivel B2.1
-                                    <ion-icon class="icon ion-md-add" name="add-sharp"></ion-icon>
-                                    <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>   
-                                </a>
-                                <div class="answer">
-                                    <p>
-                                        <strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm<br><i>Sab</i> de 1:00pm - 5:30pm<br>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="accordion-item close">
-                                <a class="accordion-link">Nivel B2.3
-                                    <ion-icon class="icon ion-md-add" name="add-sharp"></ion-icon>
-                                    <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>   
-                                </a>
-                                <div class="answer">
-                                    <p>
-                                        <strong>Calazans:</strong><br><i>Lun - Mier</i> de 6:30pm - 8:30pm
+                                        <strong>Se ofertará nuevamente en agosto</strong>
                                     </p>
                                 </div>
                             </div>
@@ -265,7 +217,9 @@
                                     <ion-icon class="icon ion-md-remove" name="remove-sharp"></ion-icon>
                                 </a>
                                 <div class="answer">
-                                    <p><strong>Calazans:</strong><br><i>Mar - Jue</i> de 6:30pm - 8:30pm</p>
+                                    <p>
+                                        <strong>Se ofertará nuevamente en agosto</strong>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -278,7 +232,7 @@
 
             <h2>Costos y descuentos</h2>
             <p>
-                Para personas <strong>particulares</strong>, cada curso tiene un costo de $912.000. Tenga en cuenta que cada nivel (A1, A2, B1, etc.) se divide en dos cursos, además el siguiente grupo de personas poseen tarifas especiales:
+                Para personas <strong>particulares</strong>, cada curso tiene un costo de $962.000. Tenga en cuenta que cada nivel (A1, A2, B1, etc.) se divide en dos cursos, además el siguiente grupo de personas poseen tarifas especiales:
             </p>
 
             <ul>
@@ -325,10 +279,11 @@
             </div>
         </div>
         <ul class="icons">
-            <li><a href="https://es-la.facebook.com/avhmedellin/" class="icon fa-facebook"><span
+            <li><a href="https://es-la.facebook.com/avhmedellin/" target="_blank" class="icon fa-facebook"><span
                         class="label">Facebook</span></a></li>
-            <li><a href="https://www.instagram.com/avhmedellin/?hl=es-la" class="icon fa-instagram"><span
-                        class="label">Instagram</span></a></li>
+            <li><a href="https://www.instagram.com/avhmedellin/?hl=es-la" target="_blank" class="icon fa-instagram"><span class="label"></span></a></li>
+            <li><a id="wpp" href="" target="_blank" class="icon fa-whatsapp"><span class="label"></span></a>
+            </li>
         </ul>
         <p>Institución Educativa para el trabajo y el desarrollo humano <br> Certificado de conocimientos académicos / Licencia de Funcionamiento 012990 del 26 de Octubre de 2015 <br> Registros de programa N° 014788 del 01 de Diciembre de 2015 / Secretaría
             de Educación de Medellín
@@ -346,6 +301,7 @@
     <script src="src/js/main.js"></script>
     <script src="src/js/avh.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="src/js/cursosIntensivos.js"></script>
     <script src="src/js/cursos.js"></script>
 
 </body>
