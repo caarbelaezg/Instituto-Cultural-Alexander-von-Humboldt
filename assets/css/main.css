@@ -4852,6 +4852,13 @@ Para el infográfico en versión desktop
     height: 100%;
 }
 
+.sedes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 
 /*Media query para el ajuste a movil*/
 
