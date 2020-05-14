@@ -4859,6 +4859,12 @@ Para el infográfico en versión desktop
     flex-wrap: wrap;
 }
 
+.exams-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 
 /*Media query para el ajuste a movil*/
 
