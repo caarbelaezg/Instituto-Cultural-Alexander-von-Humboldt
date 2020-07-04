@@ -18,8 +18,8 @@ const modalfunc = () => {
 const closeModal = () => {
     modal.setAttribute("style", "display:none")
 }
-const wpp = document.getElementById('wpp')
-wpp.setAttribute('href', 'https://api.whatsapp.com/send?phone=573008763792&text=Cuéntanos que información quieres saber sobre el AVH')
+
+
 
 
 //Slide principal
