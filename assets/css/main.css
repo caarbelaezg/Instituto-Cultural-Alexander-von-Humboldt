@@ -3756,7 +3756,7 @@ body.is-ie .post {
 .post.style1 input,
 .post.style1 select,
 .post.style1 textarea {
-    color: #1abc9c;
+    color: #EFB22D;
 }
 
 .post.style1 a {
@@ -3765,7 +3765,7 @@ body.is-ie .post {
 
 .post.style1 strong,
 .post.style1 b {
-    color: #1abc9c;
+    color: #EFB22D;
 }
 
 .post.style1 h1,
@@ -3774,7 +3774,7 @@ body.is-ie .post {
 .post.style1 h4,
 .post.style1 h5,
 .post.style1 h6 {
-    color: #1abc9c;
+    color: #EFB22D;
 }
 
 .post.style1 blockquote {
@@ -4007,7 +4007,7 @@ body.is-ie .post {
 .post.style2 h4,
 .post.style2 h5,
 .post.style2 h6 {
-    color: #3498db;
+    color: #696969;
 }
 
 .post.style2 blockquote {
@@ -4863,6 +4863,19 @@ Para el infográfico en versión desktop
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.formular-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    margin: 3rem 0;
+}
+
+.formular-cont iframe{
+    height: 100%;
+    width: 100%;
 }
 
 
