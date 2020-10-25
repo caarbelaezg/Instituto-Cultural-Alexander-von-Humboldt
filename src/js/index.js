@@ -2,6 +2,8 @@ window.onload = () => {
   if (!sessionStorage.getItem("modal")) {
     window.setTimeout(modalfunc, 2000);
     sessionStorage.setItem("modal", "1");
+  }else{
+    closeModal();
   }
 };
 
