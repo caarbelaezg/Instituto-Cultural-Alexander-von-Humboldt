@@ -4956,3 +4956,29 @@ Para el infográfico en versión desktop
         display: flex;
     }
 }
+
+@media screen and (max-width:480px){
+    .heading--secondary{
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .table-container{
+        margin-top: 10rem;
+        padding-top: 10rem !important;
+        padding-bottom: 10rem !important;
+    }
+
+    .fechas-img-cont{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:360px){
+    .table-container{
+        padding-top: 7rem !important;
+        padding-bottom: 7rem !important;
+    }
+}
