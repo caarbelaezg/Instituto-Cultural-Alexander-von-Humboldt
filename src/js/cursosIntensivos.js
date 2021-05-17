@@ -18,8 +18,8 @@ let nHorarioI = (clase) => {
       ? "B1.2"
       : idName === "B1 +"
       ? "B1 +"
-      : idName === "B2"
-      ? "B2"
+      : idName === "B2.1"
+      ? "B2.1"
       : idName === "C1"
       ? "C1"
       : idName === "A1 - Super Intensivo"
@@ -30,7 +30,7 @@ let nHorarioI = (clase) => {
     //Tratamiento especial días
     document.getElementsByClassName("day-1")[0].innerHTML = "Lunes a viernes";
     //Tratamiento especial horas
-    document.getElementsByClassName("hor-1")[0].innerHTML = "9:00am - 11:30am";
+    document.getElementsByClassName("hor-1")[0].innerHTML = "9:30am - 12:00pm";
     document.getElementsByClassName("hor-2")[0].innerHTML = "6:00pm - 8:30pm";
     document.getElementsByClassName("hor-2")[0].style.display = "block";
     //Tratamiento especial sedes
@@ -42,8 +42,7 @@ let nHorarioI = (clase) => {
     //Tratamiento especial días
     document.getElementsByClassName("day-1")[0].innerHTML = "Lunes a sábado";
     //Tratamiento especial horas
-    document.getElementsByClassName("hor-1")[0].innerHTML =
-      "Lunes a viernes 5:00pm - 9:00pm <br> Sábados 8:00am - 12:30pm";
+    document.getElementsByClassName("hor-1")[0].innerHTML = "8:00am - 12:00pm";
     document.getElementsByClassName("hor-2")[0].style.display = "none";
     //Tratamiento especial sedes
     document.getElementsByClassName("sed-1")[0].innerHTML = "Virtual";
@@ -54,6 +53,14 @@ let nHorarioI = (clase) => {
     idName === "B1.2" ||
     idName === "B1 +"
   ) {
+    //Tratamiento especial días
+    document.getElementsByClassName("day-1")[0].innerHTML = "Lunes a viernes";
+    //Tratamiento especial horas
+    document.getElementsByClassName("hor-1")[0].innerHTML = "6:00pm - 8:30pm";
+    document.getElementsByClassName("hor-2")[0].style.display = "none";
+    //Tratamiento especial sedes
+    document.getElementsByClassName("sed-1")[0].innerHTML = "Virtual";
+  } else if (idName === "B2.1") {
     //Tratamiento especial días
     document.getElementsByClassName("day-1")[0].innerHTML = "Lunes a viernes";
     //Tratamiento especial horas
