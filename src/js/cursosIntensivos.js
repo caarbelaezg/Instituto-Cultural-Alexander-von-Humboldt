@@ -42,7 +42,7 @@ let nHorarioI = (clase) => {
     //Tratamiento especial días
     document.getElementsByClassName("day-1")[0].innerHTML = "Lunes a sábado";
     //Tratamiento especial horas
-    document.getElementsByClassName("hor-1")[0].innerHTML = "8:00am - 12:00pm";
+    document.getElementsByClassName("hor-1")[0].innerHTML = "8:00am - 12:30pm";
     document.getElementsByClassName("hor-2")[0].style.display = "none";
     //Tratamiento especial sedes
     document.getElementsByClassName("sed-1")[0].innerHTML = "Virtual";
